@@ -1544,7 +1544,7 @@ object FPrincipal: TFPrincipal
       Top = 1
       Width = 751
       Height = 442
-      ActivePage = TabSheet4
+      ActivePage = TabSheet2
       Align = alClient
       MultiLine = True
       TabOrder = 0
@@ -2604,7 +2604,6 @@ object FPrincipal: TFPrincipal
           Font.Style = [fsBold]
           ParentFont = False
           ExplicitLeft = 585
-          ExplicitTop = 421
           ExplicitWidth = 137
         end
       end
@@ -3180,7 +3179,6 @@ object FPrincipal: TFPrincipal
               ParentFont = False
               TabOrder = 3
               OnClick = BExecClick
-              ExplicitLeft = 2
             end
             object BNovo: TButton
               AlignWithMargins = True
@@ -3193,7 +3191,6 @@ object FPrincipal: TFPrincipal
               Caption = 'Novo'
               TabOrder = 2
               OnClick = BNovoClick
-              ExplicitLeft = 2
             end
             object BToken: TButton
               AlignWithMargins = True
@@ -3421,9 +3418,6 @@ object FPrincipal: TFPrincipal
             Caption = 'Montar JSON Base'
             TabOrder = 1
             OnClick = Button8Click
-            ExplicitLeft = 5
-            ExplicitTop = 39
-            ExplicitHeight = 25
           end
         end
         object vBody: TMemo
@@ -3539,8 +3533,7 @@ object FPrincipal: TFPrincipal
             Align = alRight
             Caption = 'Localizar Texto:'
             Layout = tlCenter
-            ExplicitLeft = 393
-            ExplicitTop = 34
+            ExplicitHeight = 13
           end
           object Panel11: TPanel
             Left = 0
@@ -3594,9 +3587,6 @@ object FPrincipal: TFPrincipal
             Caption = 'Copiar para a '#193'rea de Trabalho'
             TabOrder = 2
             OnClick = Button10Click
-            ExplicitLeft = 151
-            ExplicitTop = 39
-            ExplicitHeight = 25
           end
           object bJon: TButton
             Left = 296
@@ -3607,7 +3597,6 @@ object FPrincipal: TFPrincipal
             Caption = 'Formatar JSON'
             TabOrder = 3
             OnClick = bJonClick
-            ExplicitLeft = 302
           end
           object vBuscar: TEdit
             AlignWithMargins = True
@@ -3638,8 +3627,6 @@ object FPrincipal: TFPrincipal
             Caption = 'Buscar'
             TabOrder = 5
             OnClick = bBuscarClick
-            ExplicitLeft = 653
-            ExplicitTop = 31
           end
         end
         object vResp: TMemo
@@ -3656,7 +3643,6 @@ object FPrincipal: TFPrincipal
           ParentFont = False
           ScrollBars = ssVertical
           TabOrder = 1
-          ExplicitTop = 69
         end
       end
     end

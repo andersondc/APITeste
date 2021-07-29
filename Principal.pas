@@ -109,6 +109,7 @@ type
     procedure Notificacao(texto: string);
     procedure BuscarPalavra(texto: string);
     procedure ScrollMemo(Memo: TMemo; Direction: Integer);
+    procedure VerificaToken;
   end;
 
 var
@@ -394,11 +395,42 @@ begin
 
   Notificacao('API Executada!');
 
+  VerificaToken;
+
   Application.ProcessMessages;
 
   Pags.ActivePageIndex:=4;
   vResp.Lines.Text:=strImageJSON;
   bJon.Click;
+
+  VerificaToken;
+end;
+
+procedure TFPrincipal.VerificaToken;
+var
+  StrBusca: string;
+  tmpJson: TJsonObject;
+  ztoken: string;
+begin
+  StrBusca:=vResp.Text;
+  if pos('access_token',StrBusca)>0 then
+  begin
+    tmpJson:=TJSONObject.ParseJSONValue(StrBusca) as TJSONObject;
+    ztoken:=tmpJson.GetValue('access_token').Value;
+
+    if length(ztoken)>0 then
+    begin
+      Notificacao('Token Localizado, Dados Salvos na Aba Token!');
+      vToken.Text:=ztoken;
+    end;
+
+    try
+      if tmpJson.GetValue('token_type').Value='bearer' then
+        vBea.Checked:=true;
+    except
+      //
+    end;
+  end;
 end;
 
 function TFPrincipal.VerificaSeTemAuth: integer;
