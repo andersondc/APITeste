@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/07/20 15:11:48.000.998,=C:\Users\DevDelphi\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/07/21 15:02:13.000.195,=C:\Users\DevDelphi\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/07/28 13:21:51.000.806,=C:\Users\DevDelphi\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/07/28 13:22:20.000.100,C:\Users\DevDelphi\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\DevDelphi\Desktop\Anderson D C\Estudos Delphi\RestAPI\Principal.pas</Transaction>
+    <Transaction>2021/07/28 13:22:20.000.100,C:\Users\DevDelphi\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\DevDelphi\Desktop\Anderson D C\Estudos Delphi\RestAPI\Principal.dfm</Transaction>
+    <Transaction>2021/07/28 13:22:32.000.139,C:\Users\DevDelphi\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\DevDelphi\Desktop\Anderson D C\Estudos Delphi\RestAPI\APITest.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
